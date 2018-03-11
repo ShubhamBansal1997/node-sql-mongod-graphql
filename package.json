@@ -1,0 +1,48 @@
+{
+  "name": "sql-mongod-graphql",
+  "version": "1.0.0",
+  "description": "An attempt to use both sql and mongod(nosql) as database and exposing api over graphql",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShubhamBansal1997/node-sql-mongod-graphql.git"
+  },
+  "keywords": [
+    "sql",
+    "nosql",
+    "mongod",
+    "graphql"
+  ],
+  "author": "Shubham Bansal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShubhamBansal1997/node-sql-mongod-graphql/issues"
+  },
+  "homepage": "https://github.com/ShubhamBansal1997/node-sql-mongod-graphql#readme",
+  "dependencies": {
+    "apollo-server-express": "^1.3.2",
+    "body-parser": "^1.18.2",
+    "casual": "^1.5.19",
+    "express": "^4.16.2",
+    "graphql": "^0.13.1",
+    "graphql-tools": "^2.21.0",
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.9",
+    "node-fetch": "^2.1.1",
+    "sequelize": "^4.35.5",
+    "sqlite": "^2.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.12.1"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "scripts": {
+    "start": "nodemon ./server.js --exec babel-node"
+  }
+}
